@@ -34,6 +34,22 @@ A simple full-stack web application that displays a list of **upcoming soccer ma
 
 ### 1. Clone the Repository
 
-```bash
+
 git clone https://github.com/DarshanKagude/FootBall-APIS.git
 cd FootBall-APIS
+
+##2.Set Up a Virtual Environment (Optional but Recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+
+###3. Install Required Python Packages
+pip install flask flask-cors requests
+
+###4. Add Your API Key
+headers = {
+    'x-rapidapi-key': "YOUR_RAPIDAPI_KEY",
+    'x-rapidapi-host': "free-api-live-football-data.p.rapidapi.com"
+}
+
+###5. Run the Flask Application
+python app.py
